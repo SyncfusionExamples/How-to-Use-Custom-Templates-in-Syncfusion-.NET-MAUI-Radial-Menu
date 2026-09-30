@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:radialMenu="clr-namespace:Syncfusion.Maui.RadialMenu;assembly=Syncfusion.Maui.RadialMenu"
+             x:Class="CustomTemplate.MainPage">
+
+    <Grid Padding="24">
+        <radialMenu:SfRadialMenu x:Name="EditorRadialMenu"
+                                 WidthRequest="330"
+                                 HeightRequest="330"
+                                 CenterButtonText="Edit"
+                                 CenterButtonFontSize="16"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center">
+            <radialMenu:SfRadialMenu.Items>
+                <!-- Cut -->
+                <radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem.View>
+                        <VerticalStackLayout>
+                            <Label Text="✂"
+                                   TextColor="#E53935"
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="1"
+                                  Text="Cut"
+                                  TextColor="Black"
+                                  FontSize="11"
+                                  FontAttributes="Bold"
+                                  HorizontalTextAlignment="Center" />
+                        </VerticalStackLayout>
+                    </radialMenu:SfRadialMenuItem.View>
+                </radialMenu:SfRadialMenuItem>
+
+                <!-- Copy -->
+                <radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem.View>
+                        <VerticalStackLayout>
+                            <Label Text="⧉"
+                                   TextColor="#1E88E5"
+                                   FontSize="20"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="1"
+                                   Text="Copy"
+                                   TextColor="Black"
+                                   FontSize="11"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center" />
+                        </VerticalStackLayout>
+                    </radialMenu:SfRadialMenuItem.View>
+                </radialMenu:SfRadialMenuItem>
+
+                <!-- Paste -->
+                <radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem.View>
+                        <VerticalStackLayout>
+                            <Label Text="▣"
+                                   TextColor="#43A047"
+                                   FontSize="20"
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="1"
+                                   Text="Paste"
+                                   TextColor="Black"
+                                   FontSize="11"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center" />
+                        </VerticalStackLayout>
+                    </radialMenu:SfRadialMenuItem.View>
+                </radialMenu:SfRadialMenuItem>
+
+                <!-- Delete -->
+                <radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem.View>
+                        <VerticalStackLayout>
+                            <Label Text="×"
+                                   TextColor="#FB8C00"
+                                   FontSize="22"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="1"
+                                   Text="Delete"
+                                   TextColor="Black"
+                                   FontSize="11"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center" />
+                        </VerticalStackLayout>
+                    </radialMenu:SfRadialMenuItem.View>
+                </radialMenu:SfRadialMenuItem>
+
+                <!-- Share -->
+                <radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem.View>
+                        <VerticalStackLayout>
+                            <Label Text="↗"
+                                   TextColor="#8E24AA"
+                                   FontSize="22"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center" />
+                            <Label Grid.Row="1"
+                                   Text="Share"
+                                   TextColor="Black"
+                                   FontSize="11"
+                                   FontAttributes="Bold"
+                                   HorizontalTextAlignment="Center" />
+                        </VerticalStackLayout>
+                    </radialMenu:SfRadialMenuItem.View>
+                </radialMenu:SfRadialMenuItem>
+            </radialMenu:SfRadialMenu.Items>
+        </radialMenu:SfRadialMenu>
+    </Grid>
+</ContentPage>
